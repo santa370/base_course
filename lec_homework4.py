@@ -15,4 +15,3 @@ c =a[1]**b[3]
 print(c)
 
 c = a + b
-print(c)
