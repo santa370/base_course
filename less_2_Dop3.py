@@ -1,12 +1,11 @@
+n = int(input("Введите число: "))  
+  
+reversed_n = 0  
+  
+while n > 0:  
+    last_digit = n % 10  
+    reversed_n = reversed_n * 10 + last_digit  
+    n = n // 10  
+  
 
-number = int(input("Введите число: "))  
-  
-reversed_number = 0  
-  
-while number > 0:  
-    last_digit = number % 10  
-    reversed_number = reversed_number * 10 + last_digit  
-    number = number // 10  
-  
-
-print("Обратное число:", reversed_number)  
+print("Обратное число:", reversed_n)  
