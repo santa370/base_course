@@ -2,19 +2,19 @@ import numpy as np
 from scipy import constants as const
 
 h = 100
-alpha_deg = 45
-beta_deg = 35
-g = const.g
+ag = 45
+bg = 35
+g = 9.8
 
-alpha_rad = np.deg2rad(alpha_deg)
-beta_rad = np.deg2rad(beta_deg)
+ar = np.deg2rad(ag)
+br = np.deg2rad(bg)
 
 
-numerator = g * h * np.tan(beta_rad)**2
+n = g * h * np.tan(br)**2
 
-denominator = 2 * np.cos(alpha_rad)**2 * (1 - np.tan(beta_rad) * np.tan(alpha_rad))
+d = 2 * np.cos(ar)**2 * (1 - np.tan(br) * np.tan(ar))
 
-v = np.sqrt(numerator / denominator)
+v = np.sqrt(n / d)
 
 print(f"Значение v: {v}")
 
@@ -25,11 +25,11 @@ import numpy as np
 from scipy.constants import k, hbar, pi, e
 
 T = 200
-epsilon = 300
+e = 300
 
 factor1 = 2 / np.sqrt(pi)
 factor2 = (hbar * k * T)**(3/2)
-factor3 = np.exp(epsilon / (k * T))
+factor3 = np.exp(e / (k * T))
 N = factor1 * factor2 * factor3
 
 print(f"Значение N: {N}")
