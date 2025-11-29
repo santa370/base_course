@@ -1,5 +1,5 @@
 import numpy as np
-from scipy import constants as const
+
 
 h = 100
 ag = 45
@@ -27,7 +27,7 @@ from scipy.constants import k, hbar, pi, e
 T = 200
 e = 300
 
-factor1 = 2 / np.sqrt(pi)
+factor1 = 2 / (pi)**0.5
 factor2 = (hbar * k * T)**(3/2)
 factor3 = np.exp(e / (k * T))
 N = factor1 * factor2 * factor3
