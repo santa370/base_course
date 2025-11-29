@@ -14,7 +14,7 @@ n = g * h * np.tan(br)**2
 
 d = 2 * np.cos(ar)**2 * (1 - np.tan(br) * np.tan(ar))
 
-v = np.sqrt(n / d)
+v = (n / d)**0.5
 
 print(f"Значение v: {v}")
 
