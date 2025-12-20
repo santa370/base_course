@@ -14,3 +14,19 @@ def draw_ladder(num_steps):
 draw_ladder(5)
 
 plt.savefig('DZdop4.png')
+plt.close()
+
+
+import matplotlib.pyplot as plt
+
+x = [1, 1, 2, 2, 3, 3, 4]
+y = [1, 3, 3, 6, 6, 9, 9]
+
+plt.plot(x, y, marker='o')
+
+plt.savefig('DZdop4.1.png')
+
+
+
+
+
